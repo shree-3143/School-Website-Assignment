@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang="en">
+        <style>
+            body {
+            background-image: url('file:///Users/shreejonnalagadda/Downloads/poster-3.png'), url('file:///Users/shreejonnalagadda/Downloads/poster-2.png');
+            background-position: top left, 100px 200px;
+            background-repeat: no-repeat, repeat-x;
+            background-size: cover;
+            margin:0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 50px;
+        }
+    
+        .links {
+        color: #000;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    
+        </style>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="file:///Users/shreejonnalagadda/Downloads/favicon.ico" rel="icon" type="image/x-icon">
+        <title>Janko - Selling Plants</title>
+        <script src="dropdown.js"></script>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li class="main"><a class="links navigation" href="website_homepage.html">Home</a></li>
+                <li class="main">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn" style="font-size: 20px">Products</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="links" href="annuals.html">Annuals</a>
+                      <a class="links" href="perennials.html">Perennials</a>
+                    </div>
+                </div></li>
+                <li class="main"><a class="links navigation" href="sign_up.html">Sign Up</a></li>
+                <li class="main"><a class="links navigation" href="about.html">About</a></li>
+                <li class="main"><a class="links" href="website_homepage.html"><img class="logo" src="file:///Users/shreejonnalagadda/Downloads/Screen%20Shot%202023-04-03%20at%201.50.46%20pm.png" alt="logo"></a></li>
+            </ul>
+        </nav>
+        <div class="form_heading">
+            Sign up to be a part of Janko!
+        </div>
+        <div class="details_form">
+            <form class="details_form">
+                <label for="first_name" class="the_label">First name:</label>
+                <input type="text" id="first_name" name="first_name" value="enter first name"><br>
+
+                <label for="last_name" class="the_label">Last name:</label>
+                <input type="text" id="last_name"  name="last_name" value="enter last name"><br>
+            </form>
+        </div>
+        <div>
+            <img src="file:///Users/shreejonnalagadda/Downloads/Screen%20Shot%202023-04-03%20at%201.50.46%20pm.png" alt="logo" class="logo_on_page" id="sign_up_logo">
+        </div>
+        <div class="survey_title">
+            Choose your favourite type of flower:
+        </div>
+        <div class="flowers_survey">
+            <form class="the_form">
+                <input type="radio" name="fav_flower"> 
+                <label>Daisies</label><br>
+
+                <input type="radio" name="fav_flower">
+                <label>Orchids</label><br>
+
+                <input type="radio" name="fav_flower">
+                <label>Tulips</label><br>
+
+                <input type="radio" name="fav_flower">
+                <label>Roses</label><br>
+            </form>
+        </div>
+        <div class="survey_title">
+            Select the options that apply to you:
+        </div>
+        <div class="flowers_survey" id="flowers_survey2">
+            <form class="the_form">
+                <input type="checkbox" id="backyard" name="backyard" value="backyard">
+                <label for="backyard"> My backyard has plants</label><br>
+
+                <input type="checkbox" id="frontyard" name="frontyard" value="frontyard">
+                <label for="frontyard"> My frontyard has plants</label><br>
+
+                <input type="checkbox" id="inside" name="inside" value="inside">
+                <label for="inside"> I have plants inside my house</label><br>
+            </form>
+            <form action="received_msg.html">
+                <button type="submit" id="survey_submit" style="cursor: pointer">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
