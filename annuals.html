@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: rgb(172, 172, 172);
+      }
+  
+      div {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+      .links {
+            color: #000;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    #div1 {
+      background-color: white;
+    }
+    </style>
+
+      <meta charset="UTF-8">  
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="products_style.css">
+      <link href="file:///Users/shreejonnalagadda/Downloads/favicon.ico" rel="icon" type="image/x-icon">
+      <title>Janko - Selling Plants</title>
+      <script src="dropdown.js"></script>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <ul>
+          <li class="main"><a class="links navigation" href="website_homepage.html">Home</a></li>
+          <li class="main">
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" style="font-size: 20px">Products</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="links" href="annuals.html">Annuals</a>
+                <a class="links" href="perennials.html">Perennials</a>
+              </div>
+          </div></li>
+          <li class="main"><a class="links navigation" href="sign_up.html">Sign Up</a></li>
+          <li class="main"><a class="links navigation" href="about.html">About</a></li>
+          <li class="main"><a class="links" href="website_homepage.html"><img class="logo" src="file:///Users/shreejonnalagadda/Downloads/Screen%20Shot%202023-04-03%20at%201.50.46%20pm.png" alt="logo"></a></li>
+      </ul>
+  </nav>
+  <div class="products_titles" style="margin-top:2%;">
+    Annuals
+  </div>
+  <div style="font-size: 20px;color: white;text-align: center;margin-top:10px;">
+    Annual plants live for only one growing season, then die off (learn more at <a style="color:#ffffff" href="https://www.gardenheights.com/single-post/2018/03/30/whats-the-difference-between-perennial-and-annual-plants#:~:text=Perennial%20plants%20regrow%20every%20spring,growing%20season%2C%20then%20die%20off."> Garden Heights Nursery</a>)
+  </div>
+
+  <div class="slideshow-container" style="margin-top:1%">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="https://www.southernliving.com/thmb/3Br0FB1_tbXGqlaqVafFP5-1gCo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-901441382-2000-e49295e4c8334168acd2098f30d89da6.jpg" alt="petunia flower" style="width:100%">
+      <div class="text">Petunia</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="https://www.thespruce.com/thmb/BEROd0vQxCJPX65SyooielT2Gus=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-grow-new-england-asters-4109086-04-c2329c0924a2457fb00994420066dc81.jpg" alt="aster flower" style="width:100%">
+      <div class="text">Aster</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="https://images.squarespace-cdn.com/content/5d4afa423d651f0001b7ffd1/1582684077485-XEEI4NZ9C19VSG7LPK5L/Canva+-+Orange+Flowers+With+Green+Leaves.jpg?format=1500w&content-type=image%2Fjpeg" alt="marigold flower" style="width:100%">
+      <div class="text">Marigold</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="https://www.bhg.com.au/media/42894/begonias-hero.jpg" alt="begonia flower" style="width:100%">
+      <div class="text">Begonia</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="https://www.thespruce.com/thmb/SMpKlHccn42qUhnr9sVUfnfbmB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/growing-hardy-mums-1402850-04-d7ae349ebc754d9e89ef78520aa64ac6.jpg" alt="chrysanthemum flower" style="width:100%">
+      <div class="text">Chrysanthemum</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="https://cdn.shopify.com/s/files/1/0558/1573/3313/products/1019_Campanula_20portenschlagiana_20Birch-Polster-Glockenblume_1_760b2f30-a7de-485c-b65d-a28380f1a993.jpg?v=1679668265" alt="campanula flower" style="width:100%">
+      <div class="text">Campanula</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+    </div><br>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+    <div id="div1"><br><br>
+      <div style="text-align:center;font-size:35px;">Products (annual plants)</div><br><br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="https://www.thespruce.com/thmb/W32JqnW73O9e71s8QnkXGb39Lb0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1184119275-07615493f1804754b4319359386fc685.jpg" alt="petunia flower" style="width:100%;height:50%;">
+          <div class="container"><br><br>
+            <div style="font-size:26px;">Petunia</div><br>
+            <p class="title"><b>Bloom time: </b>Spring, Summer, Fall</p>
+            <p>A popular annual flower and perennial hybrid, petunias are easy to grow, and bloom prolifically. Annual plants are sold as seedlings and potted colour. Short-lived perennial forms called petunias are actually calibrachoa (sometimes known as “Million Bells”), a plant closely related to petunias.</p><br>
+            <p><b>Flower colour: </b>Pink, purple, yellow, red, orange, green, white</p>
+            <script>
+              var clicks = 0;
+              function onClick() {
+                  clicks += 1;
+                  alert('Added to cart! You have ' + clicks + ' annual plant(s) in your cart.');
+              };
+            </script>
+            <p><button class="button" onclick="onClick()">Add to cart</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" style="margin-left:33.3%;margin-top:-53.25%">
+        <div class="card">
+          <img src="https://i.etsystatic.com/12426062/r/il/df5a68/3833291951/il_fullxfull.3833291951_gz8n.jpg" alt="aster flower" style="width:100%;height:50%;">
+          <div class="container"><br><br>
+            <div style="font-size:26px;">Aster</div><br>
+            <p class="title"><b>Bloom time: </b>January, February, March, December</p><br>
+            <p>Callistephus chinensis or the China Aster is a fast growing annual with oval curled mid green leaves and daisy type flowerheads borne on stalks that are around 7-10cms across.</p><br><br>
+            <p><b>Flower colour: </b>White, purple, blue, pink</p>
+            <p><button class="button" onclick="onClick()">Add to cart</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="row">
+        <div class="column" style="margin-left:66.6%;margin-top:-53.25%">
+          <div class="card">
+            <img src="https://img.freepik.com/premium-photo/floral-background-yellow-orange-marigold-flowers_116578-1769.jpg?w=2000" alt="marigold flower" style="width:100%;height:50%;">
+            <div class="container"><br><br>
+              <div style="font-size:26px;">Marigold</div>
+              <p class="title"><b>Bloom time: </b>Late spring until first frost</p><br>
+              <p>Marigolds are a favorite, no-fuss annual that can bring the color of sunshine to your garden, as well as butterflies, bees, ladybugs, and other beneficial insects. Give them full sun and some well-draining soil and watch them bloom from late spring until fall.</p><br>
+              <p><b>Flower colour: </b>Orange and yellow; some with highlights of red, gold, copper or brass</p>
+              <p><button class="button" onclick="onClick()">Add to cart</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Begonia-IMG_0089sm.jpg/640px-Begonia-IMG_0089sm.jpg" alt="begonia flower" style="width:100%;height:50%;">
+            <div class="container"><br><br>
+              <div style="font-size:26px;">Begonia</div>
+              <p class="title"><b>Bloom time: </b>Summer to frost</p><br>
+              <p>Known as wax begonias or bedding begonias, annual begonia plants (Begonia semperflorens) grow quickly, and easily fill in spaces in the garden that will benefit from attractive foliage and frilly flowers. They can be a focal point when planted in mass and are excellent specimens for container combinations. Annual begonia plants are also deer resistant, so keep them in mind for trouble spots in the landscape. </p><br>
+              <p><b>Flower colour: </b>White, cream, yellow, pink, red, orange, scarlet, crimson</p>
+              <p><button class="button" onclick="onClick()">Add to cart</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column" style="margin-left:33%;margin-top:-57%">
+          <div class="card">
+            <img src="https://cdn-asset-mel-1.airsquare.com/bloombrokers/managed/image/widget/image_gallery/72D95510-4109-4870-A1A59464096437CD-2000w.webp" alt="chrysanthemum flower" style="width:100%;height:50%;">
+            <div class="container"><br><br>
+              <div style="font-size:26px;">Chrysanthemum</div>
+              <p class="title"><b>Bloom time: </b>Late Summer through to Autumn</p><br>
+              <p>Chrysanthemums, more commonly known as mums, are popular flowers that produce colorful blooms from summer through fall. You can find mums at just about any grocery store when summer is winding down. The vibrant yellows and reds that flower from the buds is sure to brighten the day of any gardener.</p><br><br><br>
+              <p><b>Flower colour: </b>White, yellow, orange, lavender, purple, or red; as well as bicolor flowers</p>
+              <p><button class="button" onclick="onClick()">Add to cart</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="column" style="margin-left:66%;margin-top:-57%">
+            <div class="card">
+              <img src="https://www.authenticwisconsin.com/images/harebell_cu2_5_25_21.jpg" alt="campanula flower" style="width:100%;height:50%;">
+              <div class="container"><br><br>
+                <div style="font-size:26px;">Campanula</div>
+                <p class="title"><b>Bloom time: </b>Mid summer to early autumn</p><br>
+                <p>The charming bell-shaped blooms of Campanula are truly a garden classic. The blue shades add a rich dimension of color not often found among other popular garden flowers. Mix with pastels to create a cool, relaxing feeling on a hot day or go for a bold contrast with bright orange or yellow-bloomed companions.</p><br><br><br>
+                <p><b>Flower colour: </b>White, purple, blue, pink</p>
+                <p><button class="button" onclick="onClick()">Add to cart</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
