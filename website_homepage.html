@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+            background-image: url('file:///Users/shreejonnalagadda/Downloads/Untitled%20design.png');
+            background-size: cover;
+            margin: 0;
+        
+        }
+    
+            .links {
+            color: #000;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        </style>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="file:///Users/shreejonnalagadda/Downloads/favicon.ico" rel="icon" type="image/x-icon">
+        <title>Janko - Selling Plants</title>
+        <script src="dropdown.js"></script>
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li class="main"><a class="links navigation" href="website_homepage.html">Home</a></li>
+                <li class="main"><div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn" style="font-size: 20px">Products</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="links" href="annuals.html">Annuals</a>
+                      <a class="links" href="perennials.html">Perennials</a>
+                    </div>
+                </div></li>
+                <li class="main"><a class="links navigation" href="sign_up.html">Sign Up</a></li>
+                <li class="main"><a class="links navigation" href="about.html">About</a></li>
+                <li class="main"><a class="links" href="website_homepage.html"><img class="logo" src="file:///Users/shreejonnalagadda/Downloads/Screen%20Shot%202023-04-03%20at%201.50.46%20pm.png" alt="logo"></a></li>
+            </ul>
+          </nav>
+        <div id="MyDiv">
+            Welcome to Janko!
+        </div>
+        <form action="about.html" >
+            <button id="about_button">About</button>
+        </form>
+    </body>
+</html>
