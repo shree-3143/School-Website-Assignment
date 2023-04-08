@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: rgb(172, 172, 172);
+      }
+  
+      div {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+      .links {
+            color: #000;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    #div1 {
+      background-color: white;
+    }
+  
+    </style>
+
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="products_style.css">
+      <link href="file:///Users/shreejonnalagadda/Downloads/favicon.ico" rel="icon" type="image/x-icon">
+      <title>Janko - Selling Plants</title>
+      <script src="dropdown.js"></script>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <ul>
+          <li class="main"><a class="links navigation" href="website_homepage.html">Home</a></li>
+          <li class="main">
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" style="font-size: 20px">Products</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="links" href="annuals.html">Annuals</a>
+                <a class="links" href="perennials.html">Perennials</a>
+              </div>
+          </div></li>
+          <li class="main"><a class="links navigation" href="sign_up.html">Sign Up</a></li>
+          <li class="main"><a class="links navigation" href="about.html">About</a></li>
+          <li class="main"><a class="links" href="website_homepage.html"><img class="logo" src="file:///Users/shreejonnalagadda/Downloads/Screen%20Shot%202023-04-03%20at%201.50.46%20pm.png" alt="logo"></a></li>
+      </ul>
+  </nav>
+  <div class="products_titles" style="margin-top:2%;">
+    Perennials
+  </div>
+  <div style="font-size: 20px;color: white;text-align: center;margin-top:10px;">
+    A perennial plant is a plant that lives for more than two years (learn more at <a style="color:#ffffff" href="https://en.wikipedia.org/wiki/Perennial_plant"> Wikipedia</a>)
+  </div>
+
+  <div class="slideshow-container" style="margin-top:1%">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="https://static.wixstatic.com/media/3daa84_575121748634441e9f33d05649f12c01~mv2.jpg/v1/fill/w_1500,h_1000,al_c,q_85/3daa84_575121748634441e9f33d05649f12c01~mv2.jpg" alt="agastache flower" style="width:100%">
+      <div class="text">Agastache</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="https://www.thespruce.com/thmb/Uytc1f6TbEhkGzeNf2vj6zkGUzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thespruce.com-becky-shasta-daisy-flowers-2132612-4-f26b3ee509604493b264f16d2e2b60e9.jpg" alt="shasta daisy flower" style="width:100%">
+      <div class="text">Shasta daisy</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="https://plantura.garden/uk/wp-content/uploads/sites/2/2022/08/hemerocallis.jpg" alt="daylily flower" style="width:100%">
+      <div class="text">Daylily</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="https://www.thespruce.com/thmb/Ze91c8z7lihmsLeMPsJUU-M_7v8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1204639186-cd49f2b77e514d97817ab3998971c153.jpg" alt="coneflower" style="width:100%">
+      <div class="text">Coneflower</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="https://s3-ap-southeast-2.amazonaws.com/s3.pma.com.au/Website%2FPlants%2F2144398565%2FImages%2FGallery%2Fe_pinkelle_17.0.jpg" alt="escallonia flower" style="width:100%">
+      <div class="text">Escallonia</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="https://www.marthastewart.com/thmb/dX1TgMeZO8AixFYUv7b81SalD7U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/annuals-and-perennials-peonies-0719-0da72088f00c4255b585198640c22da0.jpg" alt="peony flower" style="width:100%">
+      <div class="text">Peony</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+    </div><br>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+    <div id="div1"><br><br>
+      <div style="text-align:center;font-size:35px;">Products (perennial plants)</div><br><br>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://www.thespruce.com/thmb/9cwJNyubNNbLcbo6LuYy7PpUim4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agastache-plant-profile-5191192-03-eca5f0249571483cac038c65435951cc.jpg" alt="Agastache flower" style="width:100%;height:50%;">
+            <div class="container"><br><br>
+              <div style="font-size:26px;">Agastache</div><br>
+              <p class="title"><b>Bloom time: </b>Early summer to late autumn</p>
+              <p>Agastache (aka Anise Hyssop) is a tender perennial with aromatic leaves and colorful flower spikes all summer long. While traditional varieties have blue or purple colored flowers, newer varieties feature bold colors such as red and orange. In warm climates, it comes back consistently each year. In cold climates is self-sows readily making it an annual addition to your garden.The flowers are attractive to hummingbirds, butterflies and bees, while the anise-flavored leaves can be used in teas and cooking.</p><br>
+              <script>
+                var clicks = 0;
+                function onClick() {
+                    clicks += 1;
+                    alert('Added to cart! You have ' + clicks + ' perennial plant(s) in your cart.');
+                };
+              </script>
+              <p><button class="button" onclick="onClick()">Add to cart</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column" style="margin-left:33.3%;margin-top:-52.5%">
+          <div class="card">
+            <img src="https://i.etsystatic.com/17057214/r/il/1e97a8/4158869406/il_fullxfull.4158869406_ifh9.jpg" alt="Jane" style="width:100%;height:50%;">
+            <div class="container"><br><br>
+              <div style="font-size:26px;">Shasta daisy</div><br>
+              <p class="title"><b>Bloom time: </b>Summer to autumn</p>
+              <p>Shasta daisy flowers provide perky summer blooms, offering the look of the traditional daisy along with evergreen foliage that lasts year-round in many locations. When you learn how to grow Shasta daisy, you’ll find it to be the perfect, low maintenance perennial for naturalizing and filling in bare spots in the landscape.</p><br><br>
+              <p><b>Flower colour: </b>White and yellow</p>
+              <p><button class="button" onclick="onClick()">Add to cart</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <div class="row">
+          <div class="column" style="margin-left:66.6%;margin-top:-52.5%">
+            <div class="card">
+              <img src="https://www.thespruce.com/thmb/EJMMgZWU25qBdh1iMsJtDju3R1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/growing-orange-daylily-5116342-hero-7eaa405e9f4d4ac8b13e10a3fc35750e.jpg" alt="Jane" style="width:100%;height:50%;">
+              <div class="container"><br><br>
+                <div style="font-size:26px;">Daylily</div><br>
+                <p class="title"><b>Bloom time: </b>Early spring until frost</p>
+                <p>Day Lilies are great for the beginner gardener as they require minimal care. These plants are surprisingly easy to grow, long lived, long flowering, versatile and hardy. They are not fussy about soil type. Day Lilies make an excellent border plant. They can be used effectively in many parts of the garden such as on slopes not suited for mowing, along fences, around lakes and ponds or in a rock garden.</p><br>
+                <p><b>Flower colour: </b>orange, yellow, pink, maroon, red</p>
+                <p><button class="button" onclick="onClick()">Add to cart</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="https://www.thespruce.com/thmb/UC5R39krU_dYlpJn-q2PBgIVI_M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fragrantangelconeflower-GettyImages-485947398-eec1065bb1d84cf683df04f8ed9a5e5b.jpg" alt="Jane" style="width:100%;height:50%;">
+              <div class="container"><br><br>
+                <div style="font-size:26px;">Coneflower</div>
+                <p class="title"><b>Bloom time: </b>Spring, summer and autumn</p><br>
+                <p>Coneflowers are popular perennials with good reason. They are heat and drought resistant, easy to grow, bloom for months, make great cut flowers, and attract birds and pollinators.</p><br>
+                <p><b>Flower colour: </b>Pink, orange, yellow, red, and chartreuse</p>
+                <p><button class="button" onclick="onClick()">Add to cart</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="column" style="margin-left:33%;margin-top:-49.5%">
+          <div class="card">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/s3.pma.com.au/Website%2FPlants%2F2144398565%2FImages%2FGallery%2Fe_pinkelle_08.0.jpg" alt="Jane" style="width:100%;height:50%;">
+            <div class="container"><br><br>
+              <div style="font-size:26px;">Escallonia</div>
+              <p class="title"><b>Bloom time: </b>Spring to early summer on into autumn</p><br>
+              <p>Escallonia are a low to medium growing evergreen flowering shrub with masses of flowers in spring through summer.</p><br><br>
+              <p><b>Flower colour: </b>White, pink or red flowers</p>
+              <p><button class="button" onclick="onClick()">Add to cart</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="column" style="margin-left:66%;margin-top:-49.5%">
+            <div class="card">
+              <img src="https://www.bhg.com.au/media/45117/grow-peonies-pot-credit-photographer-simon-griffiths-6.jpg" alt="Peony flower" style="width:100%;height:50%;">
+              <div class="container"><br><br>
+                <div style="font-size:26px;">Peony</div>
+                <p class="title"><b>Bloom time: </b>Late October until mid-December</p><br>
+                <p>Peonies are perennials that come back every year to take your breath away. In fact, the plants may live longer than you do—some have been known to thrive for at least 100 years.</p><br><br>
+                <p><b>Flower colour: </b>Pink, red, orange, yellow, and white</p>
+                <p><button class="button" onclick="onClick()">Add to cart</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
